@@ -1,15 +1,37 @@
 Страници
     - начална страница с два бутона - login, register
-    - login
-    - register
-    - страница за изплюване на вс ToDo Lists на логнатия user
-    - страница за самия ToDo List
+    - login - email , password ,btn
+    - register - first name, last name, email, password, confirm pass, btn, redirect to login
+    - страница за изплюване на вс ToDo Lists на логнатия user - list of all TODOs, a button to create a new todo.
+    - страница за самия ToDo List - it should have a list with all the things needed to do for the day ( or whatever it is )
+                        and should also have an empty line after everything so that you can add more tasks to the list
+                        Also the title of the todo list should be displayed and the date it was created at
+                        Also next to each task there should be a button to either delete the task or mark it as done
+                        If a task is marked as done it should have a green background
 
 База данни
-    - траблица със users
+    - траблица със users :
+        - ID - UUID
+        - firstName
+        - lastName
+        - email
+        - password
+        - createdAt - this is a date and is done in the backend
+        - todoLists - this should be OneToMany
+            - OneToMany example :
+                    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+                    private BoughtCars boughtCars;
     - таблица със todo_list
+        - createdAt
+        - title
+        - list with all the tasks
     един user може да има повече от 1 ToDo List
 
+!! IMPORTANT
+    - The passwords should be encrypted, you can use bCryptPasswordEncoder dependency, it is part of spring security
 
-проекта трябва да бъде структориран красиво/правилна
+add dependencies:
+    - moddelmapper and also make it a bean
+
+проекта трябва да бъде структориран красиво/правилно
 example structure
