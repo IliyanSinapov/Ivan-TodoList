@@ -1,0 +1,25 @@
+spring:
+    autoconfigure:
+        exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+    cloud:
+        config:
+            import-check:
+                enabled: false
+
+    #   TODO: This here should be modified with the conn strings for the DB
+    datasource:
+        driverClassName: org.postgresql.Driver
+        url: jdbc:postgresql://ep-curly-sound-a2yx6lde.eu-central-1.aws.neon.tech/assassin-db?user=assassin-db_owner&password=Z18onxdsCjKi&sslmode=require
+        username: assassin-db_owner
+        password: Z18onxdsCjKi
+
+    jpa:
+        hibernate:
+            ddl-auto: update
+        open-in-view: false
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+    server:
+        address: 0.0.0.0
+        port: 8080
