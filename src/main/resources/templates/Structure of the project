@@ -9,10 +9,10 @@ src
     │               │   ├── BeanConfiguration.java
     │               ├── controller
     │               │   ├── HomeController.java
-    │               │   ├── LoginController.java
-    │               │   ├── RegisterController.java
+    │               │   ├── LoginController.java            TODO: RegisterController and Login Controller should be under the same controler - AuthController as they both fall in the auth category
+    │               │   ├── RegisterController.java         TODO: Controllers should be flagged with annotation @Controller and @RequestMapping("/") ( req mapping should have the appropriate path for requests )
     │               │   ├── TodoController.java
-    │               ├── dto
+    │               ├── dto                                 TODO: as you already have DOTs directory with all the neccessery models there is no need for such directory again
     │               │   ├── UserDto.java
     │               │   ├── TodoListDto.java
     │               │   └── TaskDto.java
@@ -40,6 +40,14 @@ src
         │   ├── login.html
         │   ├── register.html
         │   ├── todoLists.html
-        │   └── todoListDetail.html
-        ├── application.properties
-        └── data.sql
+        │   └── todoListDetail.html   TODO: this might be better if it is todoListPage.html
+        ├── application.properties    TODO: you use application.yml
+        └── data.sql                  TODO: you dont need this file as you are connectin to online db - NeonDB
+
+
+
+TODO: this below is example for checking if a user exsists before registerin them
+
+public void register(userRegisterModel) {		!True = False
+	if (!this.userRepo.findbymail(email)) throws new Exception ("User exists")
+}
