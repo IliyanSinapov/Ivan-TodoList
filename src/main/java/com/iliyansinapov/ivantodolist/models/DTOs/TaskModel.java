@@ -1,4 +1,4 @@
-package com.iliyansinapov.ivantodolist.DTOs;
+package com.iliyansinapov.ivantodolist.models.DTOs;
 
 import com.iliyansinapov.ivantodolist.models.TodoList;
 import lombok.Getter;
