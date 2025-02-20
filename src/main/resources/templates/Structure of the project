@@ -1,0 +1,45 @@
+src
+└── main
+    ├── java
+    │   └── com
+    │       └── ilyansinapov
+    │           └── ivantodolist
+    │               ├── config
+    │               │   ├── SecurityConfig.java
+    │               │   ├── BeanConfiguration.java
+    │               ├── controller
+    │               │   ├── HomeController.java
+    │               │   ├── LoginController.java
+    │               │   ├── RegisterController.java
+    │               │   ├── TodoController.java
+    │               ├── dto
+    │               │   ├── UserDto.java
+    │               │   ├── TodoListDto.java
+    │               │   └── TaskDto.java
+    │               ├── exception
+    │               │   └── UserAlreadyExistException.java
+    │               ├── model
+    │               │   ├── User.java
+    │               │   ├── TodoList.java
+    │               │   └── Task.java
+    │               ├── repository
+    │               │   ├── UserRepository.java
+    │               │   └── TodoListRepository.java
+    │               ├── security
+    │               │   └── CustomUserDetailsService.java
+    │               ├── service
+    │               │   ├── UserService.java
+    │               │   └── TodoListService.java
+    │               └── TodoListApplication.java
+    └── resources
+        ├── static
+        │   ├── css
+        │   └── js
+        ├── templates
+        │   ├── home.html
+        │   ├── login.html
+        │   ├── register.html
+        │   ├── todoLists.html
+        │   └── todoListDetail.html
+        ├── application.properties
+        └── data.sql

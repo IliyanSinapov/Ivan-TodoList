@@ -1,7 +1,6 @@
 package com.iliyansinapov.ivantodolist.repositories;
 
-import com.iliyansinapov.ivantodolist.models.entities.TodoList;
-import com.iliyansinapov.ivantodolist.models.entities.User;
+import com.iliyansinapov.ivantodolist.models.TodoList;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

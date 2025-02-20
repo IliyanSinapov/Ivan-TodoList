@@ -1,4 +1,4 @@
-package com.iliyansinapov.ivantodolist.models.entities;
+package com.iliyansinapov.ivantodolist.models;
 
 import jakarta.persistence.*;
 import lombok.Getter;

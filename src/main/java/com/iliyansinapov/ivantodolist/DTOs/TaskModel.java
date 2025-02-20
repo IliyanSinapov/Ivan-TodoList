@@ -1,6 +1,6 @@
-package com.iliyansinapov.ivantodolist.models.DTOs.models;
+package com.iliyansinapov.ivantodolist.DTOs;
 
-import com.iliyansinapov.ivantodolist.models.entities.TodoList;
+import com.iliyansinapov.ivantodolist.models.TodoList;
 import lombok.Getter;
 import lombok.Setter;
 
